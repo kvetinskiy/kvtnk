@@ -17,21 +17,6 @@ bot.onText(/\/menu (.+)/, (msg, match) => {
 
   // send back the matched "whatever" to the chat
   bot.sendMessage(chatId, "Что вас интересует?", {
-    reply_markup: {
-      inline_keyboard: [
-          [
-            {
-              text: "Продукты"
-              callback_data: "Продукты"
-            }, {
-              text: "Бизнес"
-              callback_data: "Бизнес"
-            }, {
-              text: "Обратная связь"
-              callback_data: "Обратная связь"
-            }
-          ]
-      ]
-}
+  
 };
 });
